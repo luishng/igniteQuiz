@@ -80,20 +80,22 @@ export function History() {
               layout={Layout.springify()}
             >
               <Swipeable
-              ref={(ref) => {
-                if(ref) {
-                  swipableRefs.current.push(ref)
-                }
-              }}
+                ref={(ref) => {
+                  if(ref) {
+                    swipableRefs.current.push(ref)
+                  }
+                }}
                 overshootLeft={false}
                 containerStyle={styles.swipeableContainer}
+                leftThreshold={10}
+                renderRightActions={() => null}
+                onSwipeableOpen={() => handleRemove(item.id, index)}
                 renderLeftActions={() => (
-                  <Pressable 
+                  <View 
                     style={styles.swipeableRemove} 
-                    onPress={() => handleRemove(item.id, index)}
                   >
                     <Trash size={32} color={THEME.COLORS.GREY_100} />
-                  </Pressable>
+                  </View>
                 )}
               >
                 <HistoryCard data={item} />
