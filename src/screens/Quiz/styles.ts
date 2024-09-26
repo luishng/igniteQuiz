@@ -12,6 +12,17 @@ export const styles = StyleSheet.create({
     paddingBottom: 300,
     padding: 32,
   },
+  title: {
+    fontFamily: THEME.FONTS.BOLD,
+    color: THEME.COLORS.GREY_100,
+    fontSize: 16,
+    marginBottom: 7,
+    textAlign: 'center'
+  },
+  header: {
+    width: '100%',
+    marginBottom: 21,
+  },
   footer: {
     flexDirection: 'row',
     marginTop: 24,
