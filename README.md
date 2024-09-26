@@ -88,7 +88,7 @@ This software a mobile hybrid application, provide a way to prove your skills in
 **Clone Mobile project and access the folder**
 
 ```bash
-$ git clone https://github.com/luishng/igniteQuiz.git && cd MisterGym
+$ git clone https://github.com/luishng/igniteQuiz.git && cd igniteQuiz
 ```
 
 ```bash
